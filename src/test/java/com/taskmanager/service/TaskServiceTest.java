@@ -50,7 +50,7 @@ class TaskServiceTest {
 
         assertNotNull(result);
         assertEquals("Test Task", result.getTitle());
-        verify(taskRepository, times(1)).save(any(Task.class));
+        verify(taskRepository, times(10)).save(any(Task.class));
     }
 
     @Test
